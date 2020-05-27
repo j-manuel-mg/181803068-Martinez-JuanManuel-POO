@@ -199,11 +199,52 @@
                             diasAños = año1 - año2;
                             diasAños = Math.abs(diasAños);
                         }
-                        dias = dia2 - dia1;
-                        dias = Math.abs(dias);
+                        if (dia1 < dia2) {
+                            dias = dia2 - dia1;
+                            dias = Math.abs(dias);
+                        }
 
                     }
+                    
+                    if (mes1 == mes2 && año1 < año2) {
+                        for (int i = mes1; i < mes2; i++) {
 
+                            if (i == 4 || i == 6 || i == 9 || i == 11) {
+                                diasMeses += 30;
+
+                            }
+
+                            if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12) {
+                                diasMeses += 31;
+
+                            }
+
+                            if (i == 2) {
+                                diasMeses += 28;
+                            }
+                        }
+                        if (año2 - año1 >= 2) {
+                            diasAños = año1 - año2;
+                            diasAños = Math.abs(diasAños);
+                        }
+                        if (dia1 < dia2) {
+                            dias = dia2 - dia1;
+                            dias = Math.abs(dias);
+                        }
+                    }
+                    
+                    if (mes1 == mes2 && año1 > año2) {
+                        
+                        if (año1 - año2 >= 2) {
+                            diasAños = año1 - año2;
+                            diasAños = Math.abs(diasAños);
+                        }
+                        if (dia1 < dia2) {
+                            dias = dia2 - dia1;
+                            dias = Math.abs(dias);
+                        }
+                    }
+                    
                     if (mes1 < mes2 && año1 < año2) {
                         for (int i = mes1; i < mes2; i++) {
 
@@ -225,6 +266,10 @@
                         if (año2 - año1 >= 2) {
                             diasAños = año2 - año1;
                             diasAños = Math.abs(diasAños);
+                        }
+                        if (dia1 < dia2) {
+                            dias = dia2 - dia1;
+                            dias = Math.abs(dias);
                         }
 
                     }
