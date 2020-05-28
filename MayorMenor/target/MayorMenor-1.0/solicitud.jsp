@@ -28,12 +28,13 @@
             
             
             
-            <input type="number" name="valor<%=i%>"/><br><br>  <!-- Al input numero lo igualamos al for en la posicion[i] -->
-            
+            <input type="number" name="valor<%out.print(i);%>"/><br><br>  <!-- Al input numero lo igualamos al for en la posicion[i] -->
+            <!--name="valor%=i% = valor0, valor1, valor2-->
+            <!--name="valor%out.print(i);% = valor0, valor1, valor2-->
             
             
             <%
-                    if (request.getParameter("valor" + i) != null) { //valor + i = valor1, valor2, valor3
+                if (request.getParameter("valor" + i) != null) { //valor + i = valor1, valor2, valor3
                         array[i] = Integer.parseInt(request.getParameter("valor" + i)); //valor + i = valor1, valor2, valor3
                     }
                 }
