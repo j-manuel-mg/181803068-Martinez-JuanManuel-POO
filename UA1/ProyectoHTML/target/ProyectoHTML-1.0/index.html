@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- La !DOCTYPE html declaración define el documento como HTML5, siempre va al inicio en la linea 1 -->
+
+<!--El html elemento es el elemento raíz de una página HTML. -->
+<html>
+
+    <!-- El head elemento contiene metainformación sobre el documento. -->
+    <head>
+
+        <!-- El title elemento especifica un título para el documento. -->
+        <title>Proyecto HTML</title>
+
+        <!--Sirve para aportar información sobre el documento -->
+        <meta charset="UTF-8">
+
+        <!--Sirve para aportar información sobre el documento -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Declarar estilos -->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+
+        <!-- Cierra la etiqueta head -->
+    </head>
+
+    <!-- El body elemento contiene el contenido visible de la página. -->
+    <body> <!-- <body style="background-color: blue"> establece un fondo de color azul -->
+
+        <h3>--- Parrafos: ---</h3>
+        <!--La etiqeuta <p> hace un parrafo-->
+        <p>
+            Este párrafo
+            contiene muchas lineas
+            en el código fuente,
+            pero el navegador
+            lo ignora.
+        </p>
+
+        <p>
+            Este párrafo
+            contiene muchos espacios
+            en el código fuente,
+            pero el navegador
+            lo ignora.
+        </p>
+
+
+        <h3>--- Salto de linea: ---</h3>
+        <!--La etiqueta <br> sirve para dar saltos de linea -->
+        <p> Esto es <br> una palara <br> con un salto de línea. </p>
+
+
+        <h3>--- Texto pre formateado: ---</h3>
+        <!--El <pre> elemento HTML define texto pre formateado. -->
+        <pre>
+My Bonnie se encuentra sobre el océano.
+
+My Bonnie se encuentra sobre el océano.
+
+My Bonnie se encuentra sobre el océano.
+        </pre>
+
+
+        <h3>--- Color en un parrafo y un titulo: ---</h3>
+        <!--style="color: " " es para darle color en un titulo y en un parrafo -->
+        <h1 style="color:red;">Este es un titulo en color rojo</h1>
+
+        <p style="color:blue;">Este es un parrafo en color azul</p>
+
+
+        <h3>--- Fuente de un titulo y un parrafo: ---</h3>
+        <!--style="font-family: " " es para cambiar la Fuente de un titulo y un parrafo -->
+        <h1 style="font-family: monospace">Este es un titulo</h1>
+
+        <p style="font-family: cursive">Este es un parrrafo.</p>
+
+
+        <h3>--- Tamaño del texto: ---</h3>
+        <!--style="font-size:300% es para cambiar el tamaño del texto -->
+        <h1 style="font-size: 300% "> Este es un título </h1>
+
+        <p style="font-size:160%"> Este es un párrafo </p>
+
+
+        <h3>--- Alineacion: ---</h3>
+        <!--style="text-align: " " alineaun texto hacia alguna posicion -->
+        <h1 style="text-align:center">Titulo centrado</h1>
+
+        <p style="text-align: right">Parrafo a la derecha</p>
+
+        <h3>--- Imagen: ---</h3>
+        <!--Introduce una imagen y alt muestra lo que dira el navegador si no carga bien el internet -->
+        <img src = "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="ImagenMundo">
+
+        <h3>--- Tamaño de una imagen ancho y alto: ---</h3>
+        <!--Tamaño de imagen: ancho y alto -->
+        <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="mundo" width="500" height="600">
+
+        <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="mundo" style="width:500px ; height:600px; ">
+
+        <h3>--- Imagen con link --- </h3>
+        <!--Imagen con link -->
+        <a href="google.com">
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="mundo" style="width:42px;height:42px;">
+        </a>
+
+
+        <h3> --- Imagen flotante ---</h3>
+        <!--Imagen flotante -->
+        <p><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="mundo" style="float:left;width:42px;height:42px;">
+            La imagen flotara a la izquierda.</p>
+
+
+        <h3><br> --- Hipervinculos o enlace ---</h3>
+        <!--Hipervinculo -->
+        <a href="https://www.google.com.mx/">Google.com.mx</a>
+
+
+
+        <h3>--- Tabla con borde: ---</h3>
+        <!--Tabla sin borde -->
+        <table style="width:100%">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Manuel</td>
+                <td>Garcia</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>luis</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+
+        <h3>--- Lista en Html ---</h3>
+        <!-- Lista-->
+
+        <ul>
+            <li>Cafe</li>
+            <li>Tea</li>
+            <li>Leche</li>
+        </ul>
+
+        <h3> --- Lista ordenada en Html ---</h3>
+        <!-- Lista-->
+
+        <ol>
+            <li>Cafe</li>
+            <li>Tea</li>
+            <li>Leche</li>
+        </ol>
+
+        <h3> ---Lista de descripcion ---</h3>
+        <!-- Lista con descripcion-->
+
+        <dl>
+            <dt>cafe</dt>
+            <dd>- negro</dd>
+            <dt>Leche</dt>
+            <dd>- blanca</dd>
+        </dl>
+
+        <h3>--- Bloque en HTML ---</h3>
+        <!--Bloques en HTML -->
+        <div>Hello World</div>
+        <div style="border: 1px solid black">Hello World</div>
+
+        <h3>--- Elementos en linea ---</h3>
+        <!--Elemtos en linea -->
+        <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element 
+            inside a paragraph.</p>
+
+        <h3>--- Elemento div ---</h3>
+        <!--Elemento div -->
+        <div style="background-color:black;color:white;padding:20px;">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous 
+                city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+
+
+        <h3>--- Elmento span ---</h3>
+        <!-- Elemento span-->
+        <h1>My <span style="color:red">Important</span> Heading</h1>
+
+
+        <h3>--- Formulario ---</h3>
+        <!--Formato para un formulario -->
+        <form>
+            .
+            form elements
+            .
+        </form>
+
+        <h3>--- Formulario con entrada de texto ---</h3>
+        <!-- Formulario con entrada de texto -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+
+        <h3> --- Atributo de valor --- </h3>
+        <!-- Atributo value -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fnam" name="fnam" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lnam" name="lnam" value="Doe">
+        </form>
+
+        <h3>--- Atributo readonly --- </h3>
+        <!-- readonly-->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fna" name="fname" value="John" readonly><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lna" name="lname" value="Doe">
+        </form>
+
+        <h3>--- Atributo disabled --- </h3>
+        <!-- disabled-->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fn" name="fname" value="John" disabled><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="ln" name="lname" value="Doe">
+        </form>
+
+        <h3>--- Atributo size --- </h3>
+        <!-- size -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="f" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="p" name="pin" size="4">
+        </form>
+
+        <h3>--- Atributo maxlength --- </h3>
+        <!-- maxlength -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin" maxlength="4" size="4">
+        </form>
+
+        <h3>--- Atributo min y max --- </h3>
+        <!-- mmax y mini -->
+        <form>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+
+        <h3>--- Atributo multiple --- </h3>
+        <!-- multiple -->
+        <form>
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple>
+        </form>
+
+        <h3>--- Atributo del patron --- </h3>
+        <!-- del patron -->
+        <form>
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code"
+                   pattern="[A-Za-z]{3}" title="Three letter country code">
+        </form>
+
+        <h3>--- Atributo marcador de posicion --- </h3>
+        <!-- posicion -->
+        <form>
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="123-45-678"
+                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </form>
+
+        <h3>--- Atributo requerido ---</h3>
+        <!--Requerido -->
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </form>
+
+        <h3>--- Atributo step ---</h3>
+        <!--step -->
+        <form>
+            <label for="points">Points:</label>
+            <input type="number" id="points" name="points" step="3">
+        </form>
+
+        <h3>--- Atributo autofocus ---</h3>
+        <!--autofocus -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname" autofocus><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname">
+        </form>
+
+        <h3>--- Atributo altura y ancho --- </h3>
+        <!--altura y ancho -->
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname"><br><br>
+            <input type="image" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="Submit" width="48" height="48">
+        </form>
+
+        <h3> --- Atributo lista ---</h3>
+        <!-- lista-->
+        <form>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </form>
+
+        <h3>--- Atributo autocompletar ---</h3>
+        <!-- autocompletar -->
+        <form action="/action_page.php" autocomplete="on">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </body>
+
+    <!--cierre de la etiqueta html -->    
+</html>
