@@ -73,13 +73,13 @@
                     conexion = DriverManager.getConnection("jdbc:mysql://localhost/consolas", "root", "");
                     stmt = conexion.createStatement();
                     rs = stmt.executeQuery("SELECT "
-                            + "consola.id_consola, "
-                            + "consola.plataforma, "
-                            + "consola.modelo,"
-                            + "consola.almacenamiento, "
-                            + "consola.color, "
-                            + "consola.precio, "
-                            + "cat_marca.marca"
+                            + " consola.id_consola, "
+                            + " consola.plataforma, "
+                            + " consola.modelo, "
+                            + " consola.almacenamiento, "
+                            + " consola.color, "
+                            + " consola.precio, "
+                            + " cat_marca.marca "
                             + " FROM consola "
                             + " JOIN cat_marca ON consola.id_marca = cat_marca.id_marca");
                     while (rs.next()) {
@@ -97,7 +97,7 @@
 
                 <td><%out.println(rs.getString(6));%></td>
 
-                <td><%out.println(rs.getString(7));%></td>
+                <td><%out.println(rs.getString(2));%></td>
 
             </tr>
             <%}%>
@@ -141,8 +141,6 @@
             <tr>
                 <td><%out.println(rs.getInt(1));%></td>
                 <td><%out.println(rs.getString(2));%></td>
-
-
             </tr>
             <%}%>
         </table>
