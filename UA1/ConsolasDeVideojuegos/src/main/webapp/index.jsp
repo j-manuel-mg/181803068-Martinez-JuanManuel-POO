@@ -76,7 +76,7 @@
                             + "consola.id_consola, "
                             + "consola.plataforma, "
                             + "consola.modelo,"
-                            + " consola.almacenamiento, "
+                            + "consola.almacenamiento, "
                             + "consola.color, "
                             + "consola.precio, "
                             + "cat_marca.marca"
@@ -91,13 +91,13 @@
 
                 <td><%out.println(rs.getString(3));%></td>
 
-                <td><%out.println(rs.getInt(4));%></td>
+                <td><%out.println(rs.getString(4));%></td>
 
                 <td><%out.println(rs.getString(5));%></td>
 
-                <td><%out.println(rs.getInt(6));%></td>
+                <td><%out.println(rs.getString(6));%></td>
 
-                <td><%out.println(rs.getString(2));%></td>
+                <td><%out.println(rs.getString(7));%></td>
 
             </tr>
             <%}%>
