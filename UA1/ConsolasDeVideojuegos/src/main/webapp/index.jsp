@@ -167,16 +167,6 @@
 
         <%
 
-            } catch (SQLSyntaxErrorException e) { //Excepcion de la tabla o base de datos
-
-                out.println(e);
-
-                out.println("<br><br>");
-
-                out.println(e.getMessage());
-
-                out.println("Error en la base de datos o una tabla no encontrado");
-
             } catch (SQLException e) {
 
                 if (e.getErrorCode() == 0) {
