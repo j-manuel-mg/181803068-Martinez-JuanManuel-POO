@@ -97,7 +97,7 @@
 
                 <td><%out.println(rs.getString(6));%></td>
 
-                <td><%out.println(rs.getString(2));%></td>
+                <td><%out.println(rs.getString(7));%></td>
 
             </tr>
             <%}%>
@@ -105,20 +105,40 @@
 
         <%
 
-            } catch (SQLSyntaxErrorException e) { //Excepcion de la tabla o base de datos
+            } catch (SQLException e) {
 
-                out.println(e);
+                if (e.getErrorCode() == 0) {
 
-                out.println("<br><br>");
+                    System.out.println(e.getMessage());
+                    out.println("<br><br>Error SQL: Nombre del host incorrecto");
 
-                out.println(e.getMessage());
+                } else if (e.getErrorCode() == 1049) {
 
-                out.println("Error en la base de datos o una tabla no encontrado");
+                    out.println("<br><br>Error SQL: La base de datos no existe");
 
+                } else if (e.getErrorCode() == 1045) {
+
+                    out.println("<br><br>Error SQL: Nombre de usuario o contraseña incorrecto");
+
+                } else if (e.getErrorCode() == 1146) {
+
+                    out.println("<br><br>Error SQL: La tabla no existe");
+
+                } else if (e.getErrorCode() == 1054) {
+
+                    out.println("<br><br>Error SQL: Error en la consulta");
+
+                } else {
+
+                    System.out.println("Error: ");
+
+                    out.println(e.getMessage());
+                }
             } catch (Exception e) {
 
-                System.out.println("Error: " + e);
+                out.println("<br><br>Error: " + e.getMessage());
 
+                out.println("<br><br>Error: " + e);
             }
         %>
 
@@ -157,10 +177,40 @@
 
                 out.println("Error en la base de datos o una tabla no encontrado");
 
+            } catch (SQLException e) {
+
+                if (e.getErrorCode() == 0) {
+
+                    System.out.println(e.getMessage());
+                    out.println("<br><br>Error SQL: Nombre del host incorrecto");
+
+                } else if (e.getErrorCode() == 1049) {
+
+                    out.println("<br><br>Error SQL: La base de datos no existe");
+
+                } else if (e.getErrorCode() == 1045) {
+
+                    out.println("<br><br>Error SQL: Nombre de usuario o contraseña incorrecto");
+
+                } else if (e.getErrorCode() == 1146) {
+
+                    out.println("<br><br>Error SQL: La tabla no existe");
+
+                } else if (e.getErrorCode() == 1054) {
+
+                    out.println("<br><br>Error SQL: Error en la consulta");
+
+                } else {
+
+                    System.out.println("Error: ");
+
+                    out.println(e.getMessage());
+                }
             } catch (Exception e) {
 
-                System.out.println("Error: " + e);
+                out.println("<br><br>Error: " + e.getMessage());
 
+                out.println("<br><br>Error: " + e);
             }
         %>
     </body>
