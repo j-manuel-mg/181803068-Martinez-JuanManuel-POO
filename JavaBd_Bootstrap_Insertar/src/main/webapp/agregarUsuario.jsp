@@ -27,7 +27,7 @@
     <body>
 
         <%
-            if (resultado == 1) { //Compara si el executeUpdate fue exitoso
+            if (resultado > 0) { //Compara si el executeUpdate fue exitoso
         %>
 
         <!-- <br><h3 style="color: darkgreen">Usuario agregado exitosamente a la Base de Datos</h3><br> -->
