@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>mx.com.mgjm</groupId>
-    <artifactId>JavaBd_Bootstrap_Insertar</artifactId>
+    <artifactId>JavaBd_Bootstrap_Insertar_Actualizar</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>JavaBd_Bootstrap_Insertar</name>
+    <name>JavaBd_Bootstrap_Insertar_Actualizar</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
