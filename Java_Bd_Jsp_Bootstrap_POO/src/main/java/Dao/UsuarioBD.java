@@ -11,7 +11,7 @@ public class UsuarioBD {
     Connection conexion = new Conexion().getConexion();
     PreparedStatement stmt = null;
     ResultSet rs = null;
-
+    
     //Atributos SQLz
     private static final String listadoUsuario = "SELECT * FROM usuario";
     private static final String buscarUsuario = "SELECT usuario, edad FROM usuario WHERE id_usuario = ?";
