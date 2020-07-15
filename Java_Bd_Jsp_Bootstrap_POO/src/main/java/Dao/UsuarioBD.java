@@ -40,7 +40,7 @@ public class UsuarioBD {
         this.stmt.setInt(1, id);
         this.rs = this.stmt.executeQuery();
         while (this.rs.next()) {
-            usuarioId.add(new Usuario(this.rs.getString("usuario"), this.rs.getInt("edad")));
+            usuarioId.add(new Usuario( this.rs.getInt("edad"), this.rs.getString("usuario")));
         }
         return usuarioId;
     }
@@ -56,7 +56,6 @@ public class UsuarioBD {
         } else {
             return false;
         }
-
     }
 
     //Metodo Agregar Usuario ---> Correcto
@@ -85,7 +84,7 @@ public class UsuarioBD {
         }
     }
 
-    public boolean editarPassword(Usuario1 usuario) throws SQLException {
+    public boolean editarPassword(Usuario usuario) throws SQLException {
         this.stmt = this.conexion.prepareStatement(this.editarPassword);
         this.stmt.setString(1, usuario.getPassword());
         this.stmt.setInt(2, usuario.getIdUsuario());

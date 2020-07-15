@@ -1,5 +1,5 @@
 
-<%@page import="Dao.Usuario1"%>
+<%@page import="Dao.Usuario"%>
 <%@page import="Dao.UsuarioBD"%>
 <%@page import="Configuracion.*"%>
 <%@page import="java.sql.*"%>
@@ -16,7 +16,7 @@
         <%
             boolean executeUpdate;
             UsuarioBD usuario = new UsuarioBD();
-            executeUpdate = usuario.editarPassword(new Usuario1(request.getParameter("password"), Integer.parseInt(request.getParameter("id"))));
+            executeUpdate = usuario.editarPassword(new Usuario(request.getParameter("password"), Integer.parseInt(request.getParameter("id"))));
             
             if (executeUpdate) {
         %>

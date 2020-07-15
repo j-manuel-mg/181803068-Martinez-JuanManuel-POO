@@ -18,12 +18,18 @@ public class Usuario {
     }
     
     //Buscar usuario
-    public Usuario(String usuario, int edad){
-        this.usuario = usuario;
+    public Usuario( int edad, String usuario){
         this.edad = edad;
+        this.usuario = usuario;
     }
     
-    //Constrctor Listado Usuario
+    //Cambiar contraseña
+    public Usuario(String password, int idUsuario) {
+        this.password = password;
+        this.idUsuario = idUsuario;
+    }
+    
+    //Constructor Listado Usuario
     public Usuario(int idUsuario, String usuario, int edad, String password) {
         this.idUsuario = idUsuario;
         this.usuario = usuario;
