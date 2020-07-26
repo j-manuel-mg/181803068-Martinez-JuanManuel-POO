@@ -44,10 +44,3 @@
         </div>
     </body>
 </html>
-<%
-    /*
-    } catch (Exception e) {
-        System.out.println("Error");
-    }
-     */
-%>
